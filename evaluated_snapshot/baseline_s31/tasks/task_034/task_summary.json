@@ -1,0 +1,14 @@
+{
+  "task_index": 34,
+  "task_name": "ArrangeBreadBasket",
+  "task_group": "composite_unseen",
+  "protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "expected_episodes": 50,
+  "completed_episodes": 50,
+  "successes": 1,
+  "engineering_complete": true,
+  "last_job_id": "1511909",
+  "last_error": null,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000"
+}

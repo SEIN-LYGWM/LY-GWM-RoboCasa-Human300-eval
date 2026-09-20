@@ -1,0 +1,32 @@
+{
+  "input_zip_sha256": "f0ac15e1742fee3a52687832cd477ee2f1e9b0219436817dd1b7a50cf693bff5",
+  "source_files_verified": 891,
+  "all_source_file_hashes_verified": true,
+  "source_manifest_sha256": "ca72d2ddc713f389dcb7b5b9f98813079d30b5b47bc530e7b2c525c8d1cfa77a",
+  "external_source_counts": {
+    "robocasa": 500,
+    "robosuite": 319,
+    "robomimic": 72
+  },
+  "numpy_imports": {
+    "policy": {
+      "version": "1.26.4",
+      "file": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/numpy/__init__.py"
+    },
+    "simulation": {
+      "version": "2.2.5",
+      "file": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/robocasa101_sim_py310_t251_cu121/lib/python3.10/site-packages/numpy/__init__.py"
+    }
+  },
+  "selected_distribution_counts": {
+    "policy": 88,
+    "simulation": 67
+  },
+  "git_commit_recovered": false,
+  "git_query_result": "All three external source directories returned fatal: not a git repository",
+  "source_snapshot_scope": "Current bounded text/code snapshot; simulator assets and datasets excluded; not proof of historical revision",
+  "all_packages_import_tested": false,
+  "installable_environment_lock_ready": false,
+  "environment_resolution_pending": false,
+  "gpu_validation_run": false
+}

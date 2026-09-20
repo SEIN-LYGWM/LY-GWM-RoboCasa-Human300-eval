@@ -1,0 +1,453 @@
+{
+  "manifest": {
+    "task_count": 50,
+    "episodes_per_task": 50,
+    "total_episodes": 2500,
+    "split": "pretrain",
+    "planned_n_envs": 5,
+    "n_action_steps": 16,
+    "denoising_steps": 4,
+    "data_config": "panda_omron",
+    "embodiment_tag": "new_embodiment",
+    "horizon_source": "robocasa.utils.dataset_registry_utils.get_task_horizon",
+    "tasks": [
+      {
+        "task_index": 0,
+        "task_name": "CloseBlenderLid",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/CloseBlenderLid",
+        "max_episode_steps": 900,
+        "episode_count": 50
+      },
+      {
+        "task_index": 1,
+        "task_name": "CloseFridge",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/CloseFridge",
+        "max_episode_steps": 900,
+        "episode_count": 50
+      },
+      {
+        "task_index": 2,
+        "task_name": "CloseToasterOvenDoor",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/CloseToasterOvenDoor",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 3,
+        "task_name": "CoffeeSetupMug",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/CoffeeSetupMug",
+        "max_episode_steps": 600,
+        "episode_count": 50
+      },
+      {
+        "task_index": 4,
+        "task_name": "NavigateKitchen",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/NavigateKitchen",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 5,
+        "task_name": "OpenCabinet",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/OpenCabinet",
+        "max_episode_steps": 1050,
+        "episode_count": 50
+      },
+      {
+        "task_index": 6,
+        "task_name": "OpenDrawer",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/OpenDrawer",
+        "max_episode_steps": 750,
+        "episode_count": 50
+      },
+      {
+        "task_index": 7,
+        "task_name": "OpenStandMixerHead",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/OpenStandMixerHead",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 8,
+        "task_name": "PickPlaceCounterToCabinet",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/PickPlaceCounterToCabinet",
+        "max_episode_steps": 750,
+        "episode_count": 50
+      },
+      {
+        "task_index": 9,
+        "task_name": "PickPlaceCounterToStove",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/PickPlaceCounterToStove",
+        "max_episode_steps": 600,
+        "episode_count": 50
+      },
+      {
+        "task_index": 10,
+        "task_name": "PickPlaceDrawerToCounter",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/PickPlaceDrawerToCounter",
+        "max_episode_steps": 750,
+        "episode_count": 50
+      },
+      {
+        "task_index": 11,
+        "task_name": "PickPlaceSinkToCounter",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/PickPlaceSinkToCounter",
+        "max_episode_steps": 900,
+        "episode_count": 50
+      },
+      {
+        "task_index": 12,
+        "task_name": "PickPlaceToasterToCounter",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/PickPlaceToasterToCounter",
+        "max_episode_steps": 600,
+        "episode_count": 50
+      },
+      {
+        "task_index": 13,
+        "task_name": "SlideDishwasherRack",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/SlideDishwasherRack",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 14,
+        "task_name": "TurnOffStove",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/TurnOffStove",
+        "max_episode_steps": 750,
+        "episode_count": 50
+      },
+      {
+        "task_index": 15,
+        "task_name": "TurnOnElectricKettle",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/TurnOnElectricKettle",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 16,
+        "task_name": "TurnOnMicrowave",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/TurnOnMicrowave",
+        "max_episode_steps": 450,
+        "episode_count": 50
+      },
+      {
+        "task_index": 17,
+        "task_name": "TurnOnSinkFaucet",
+        "task_group": "atomic_seen",
+        "env_id": "robocasa/TurnOnSinkFaucet",
+        "max_episode_steps": 600,
+        "episode_count": 50
+      },
+      {
+        "task_index": 18,
+        "task_name": "DeliverStraw",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/DeliverStraw",
+        "max_episode_steps": 2550,
+        "episode_count": 50
+      },
+      {
+        "task_index": 19,
+        "task_name": "GetToastedBread",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/GetToastedBread",
+        "max_episode_steps": 3000,
+        "episode_count": 50
+      },
+      {
+        "task_index": 20,
+        "task_name": "KettleBoiling",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/KettleBoiling",
+        "max_episode_steps": 1500,
+        "episode_count": 50
+      },
+      {
+        "task_index": 21,
+        "task_name": "LoadDishwasher",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/LoadDishwasher",
+        "max_episode_steps": 1800,
+        "episode_count": 50
+      },
+      {
+        "task_index": 22,
+        "task_name": "PackIdenticalLunches",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/PackIdenticalLunches",
+        "max_episode_steps": 3900,
+        "episode_count": 50
+      },
+      {
+        "task_index": 23,
+        "task_name": "PreSoakPan",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/PreSoakPan",
+        "max_episode_steps": 2400,
+        "episode_count": 50
+      },
+      {
+        "task_index": 24,
+        "task_name": "PrepareCoffee",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/PrepareCoffee",
+        "max_episode_steps": 1800,
+        "episode_count": 50
+      },
+      {
+        "task_index": 25,
+        "task_name": "RinseSinkBasin",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/RinseSinkBasin",
+        "max_episode_steps": 1350,
+        "episode_count": 50
+      },
+      {
+        "task_index": 26,
+        "task_name": "ScrubCuttingBoard",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/ScrubCuttingBoard",
+        "max_episode_steps": 1200,
+        "episode_count": 50
+      },
+      {
+        "task_index": 27,
+        "task_name": "SearingMeat",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/SearingMeat",
+        "max_episode_steps": 4350,
+        "episode_count": 50
+      },
+      {
+        "task_index": 28,
+        "task_name": "SetUpCuttingStation",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/SetUpCuttingStation",
+        "max_episode_steps": 2400,
+        "episode_count": 50
+      },
+      {
+        "task_index": 29,
+        "task_name": "StackBowlsCabinet",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/StackBowlsCabinet",
+        "max_episode_steps": 2100,
+        "episode_count": 50
+      },
+      {
+        "task_index": 30,
+        "task_name": "SteamInMicrowave",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/SteamInMicrowave",
+        "max_episode_steps": 2100,
+        "episode_count": 50
+      },
+      {
+        "task_index": 31,
+        "task_name": "StirVegetables",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/StirVegetables",
+        "max_episode_steps": 2400,
+        "episode_count": 50
+      },
+      {
+        "task_index": 32,
+        "task_name": "StoreLeftoversInBowl",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/StoreLeftoversInBowl",
+        "max_episode_steps": 2550,
+        "episode_count": 50
+      },
+      {
+        "task_index": 33,
+        "task_name": "WashLettuce",
+        "task_group": "composite_seen",
+        "env_id": "robocasa/WashLettuce",
+        "max_episode_steps": 1650,
+        "episode_count": 50
+      },
+      {
+        "task_index": 34,
+        "task_name": "ArrangeBreadBasket",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/ArrangeBreadBasket",
+        "max_episode_steps": 4350,
+        "episode_count": 50
+      },
+      {
+        "task_index": 35,
+        "task_name": "ArrangeTea",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/ArrangeTea",
+        "max_episode_steps": 2250,
+        "episode_count": 50
+      },
+      {
+        "task_index": 36,
+        "task_name": "BreadSelection",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/BreadSelection",
+        "max_episode_steps": 1950,
+        "episode_count": 50
+      },
+      {
+        "task_index": 37,
+        "task_name": "CategorizeCondiments",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/CategorizeCondiments",
+        "max_episode_steps": 1650,
+        "episode_count": 50
+      },
+      {
+        "task_index": 38,
+        "task_name": "CuttingToolSelection",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/CuttingToolSelection",
+        "max_episode_steps": 1200,
+        "episode_count": 50
+      },
+      {
+        "task_index": 39,
+        "task_name": "GarnishPancake",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/GarnishPancake",
+        "max_episode_steps": 2700,
+        "episode_count": 50
+      },
+      {
+        "task_index": 40,
+        "task_name": "GatherTableware",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/GatherTableware",
+        "max_episode_steps": 2250,
+        "episode_count": 50
+      },
+      {
+        "task_index": 41,
+        "task_name": "HeatKebabSandwich",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/HeatKebabSandwich",
+        "max_episode_steps": 2700,
+        "episode_count": 50
+      },
+      {
+        "task_index": 42,
+        "task_name": "MakeIceLemonade",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/MakeIceLemonade",
+        "max_episode_steps": 3000,
+        "episode_count": 50
+      },
+      {
+        "task_index": 43,
+        "task_name": "PanTransfer",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/PanTransfer",
+        "max_episode_steps": 1800,
+        "episode_count": 50
+      },
+      {
+        "task_index": 44,
+        "task_name": "PortionHotDogs",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/PortionHotDogs",
+        "max_episode_steps": 2250,
+        "episode_count": 50
+      },
+      {
+        "task_index": 45,
+        "task_name": "RecycleBottlesByType",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/RecycleBottlesByType",
+        "max_episode_steps": 2850,
+        "episode_count": 50
+      },
+      {
+        "task_index": 46,
+        "task_name": "SeparateFreezerRack",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/SeparateFreezerRack",
+        "max_episode_steps": 2400,
+        "episode_count": 50
+      },
+      {
+        "task_index": 47,
+        "task_name": "WaffleReheat",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/WaffleReheat",
+        "max_episode_steps": 4050,
+        "episode_count": 50
+      },
+      {
+        "task_index": 48,
+        "task_name": "WashFruitColander",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/WashFruitColander",
+        "max_episode_steps": 3150,
+        "episode_count": 50
+      },
+      {
+        "task_index": 49,
+        "task_name": "WeighIngredients",
+        "task_group": "composite_unseen",
+        "env_id": "robocasa/WeighIngredients",
+        "max_episode_steps": 3000,
+        "episode_count": 50
+      }
+    ]
+  },
+  "environment_seed_formula": "489000 + task_index * 1000 + episode_index",
+  "policy_seed_formula": "489 + task_index; reset on server restart",
+  "source_commit": "9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10",
+  "driver": "batched_environment_slots_with_official_multistep_wrapper",
+  "success_rule": "OR_of_chunk_end_info_success",
+  "video_recorded": false,
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "checkpoint_origin": "self_trained_Human300",
+  "training_config_sha256": "9934fcce879f52414063b7cf9559eb5d3988e2deeb5fbe991279b95f2c0cd8c4",
+  "checkpoint_commit_sha256": "1f8fbc7232dacff0324a15bdf2683d658489eba5ec1f680190d88b74ab00efd2",
+  "checkpoint_metadata_sha256": "bd5c5b768b28224fc770304bc9f68178bb62ef23858c4d87e03d165bcde8e6b9",
+  "checkpoint_config_sha256": "6713ae6e9ee07ebf30f18a231bedcf9c06f8c64595d62529b6eb175498ef0526",
+  "benchmark": "multitask_learning",
+  "split": "pretrain",
+  "joint_model": {
+    "model_name": "LY-GWM-GR00T-N1.5-Human300",
+    "mode": "learned_graph_dynamics_shadow_prediction",
+    "shadow_outputs_influence_actions": false,
+    "lygwm_checkpoint": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s32_pretrain50_lygwm_shadow/lygwm-best.pt",
+    "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+    "lygwm_training_config_sha256": "69aa1cd451dba2f9719106bc44d73305f180c7ee5290163568e20596c433825e",
+    "gr00t_source_sha256": {
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/model/backbone/eagle_backbone.py": "553d642fe1b5f7fca0b4d09a719a8df76ee21cca864d6292336c7656c5bc0b50",
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/model/gr00t_n1.py": "1b4a9653f3818f7417f2e99aa558be0abf19dc1cd05e3d026a987dde294f8138",
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/model/policy.py": "c6bd0bfb1356ac0185d2c6971dbc1208d01e84cb2b70854bd00fa80c3fb5c6c1",
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/data/dataset.py": "654d25bd9f43fdaf13cd36eb5b392d706fb5dc3d913737cd107c6d8fc90033f6",
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/experiment/data_config.py": "83107d265debc96b4215e31a10fbb522f090203dec2672b0a7a1969e5ee33ee9",
+      "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/gr00t/model/transforms.py": "c3a8b3b04a36046f723787a013a61aa951a1e9185dd33578f8bad26653e5416a"
+    },
+    "baseline_protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+    "w6_reference_job_id": "1514313",
+    "w6_report_sha256": "dc016c6181fede74deb8c4c680aeea4d5270a3e1e78ffd8da4095659d2afc72d",
+    "w6_contract_sha256": "7f2e346e43e3da9b2d0cddfc296d7af0acc089e64d0fdf6b2639700dee610f2b",
+    "gr00t_parameters": 2724163520,
+    "lygwm_parameters": 10237204,
+    "combined_parameters": 2734400724
+  }
+}

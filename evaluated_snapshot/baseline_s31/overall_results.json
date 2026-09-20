@@ -1,0 +1,28 @@
+{
+  "completed_tasks": 50,
+  "valid_episodes": 2500,
+  "successes": 181,
+  "groups": {
+    "atomic_seen": {
+      "episodes": 900,
+      "successes": 141,
+      "success_rate": 0.15666666666666668
+    },
+    "composite_seen": {
+      "episodes": 800,
+      "successes": 25,
+      "success_rate": 0.03125
+    },
+    "composite_unseen": {
+      "episodes": 800,
+      "successes": 15,
+      "success_rate": 0.01875
+    }
+  },
+  "all_2500_completed": true,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "training_config_sha256": "9934fcce879f52414063b7cf9559eb5d3988e2deeb5fbe991279b95f2c0cd8c4",
+  "overall_success_rate": 0.0724,
+  "protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943"
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "cache_contract_sha256": "d77adc994e41bb4d8ed9c23a1418c7cc885ddedc554b3b6b902f0de2da809719",
+  "graph_source_sha256": "e8fdf8fa6c266e574d93a30b5424da24a99054432cd4da5e10bdeb07f7bf8a24",
+  "worker_sha256": "aa6bb5eece2eca77b2a23625a138336ef02132852f24e9498882ffa1fb4d1a2c",
+  "graph_config": {
+    "feature_dim": 2048,
+    "feature_nodes": 16,
+    "state_dim": 20,
+    "action_dim": 12,
+    "horizon": 16,
+    "width": 384,
+    "blocks": 4
+  },
+  "initialization": "fresh_parameters_with_zero_residual_output_layers; W2_smoke_weights_not_loaded",
+  "seed": 4892026,
+  "batch_size": 32,
+  "max_epochs": 10,
+  "patience": 3,
+  "learning_rate": 0.0001,
+  "minimum_learning_rate": 1e-06,
+  "warmup_steps": 200,
+  "segment_seconds": 25200,
+  "checkpoint_every_steps": 500,
+  "loss": "feature_MSE_plus_state_MSE",
+  "precision": "float32; TF32_disabled",
+  "train_pairs": 108000,
+  "validation_pairs": 12000,
+  "steps_per_epoch": 3375,
+  "max_optimizer_steps": 33750,
+  "cache_shuffle": "epoch_chunk_shuffle_then_640_sample_buffer_shuffle",
+  "gr00t_frozen": true
+}

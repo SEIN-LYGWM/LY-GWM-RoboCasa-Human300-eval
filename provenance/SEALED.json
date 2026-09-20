@@ -1,0 +1,14 @@
+{
+  "status": "sealed",
+  "created_at": "2026-09-20T09:51:29.958634+00:00",
+  "baseline_protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "joint_protocol_sha256": "ae04489ecf03b1eca3250d1302c866d1f5f8657e4b9be1d5d3f772ae12c0c371",
+  "file_manifest_sha256": "3e30861783695e833bb7fe3e3a38e6e9e6410b659f5bce858eee96b048fcf8fc",
+  "audit_report_sha256": "ec6440c32cedf7f4fb5bedd7c66c4e045544e1e4fedaf80dd4320ca640de6cd3",
+  "analysis_sha256": {
+    "all_2500_paired_episodes.json": "22ce6908b1fd93ad7a23a667385af6e84340757ca8db73def0bbd614ca67974b",
+    "changed_135_episodes.json": "09ee5cb03636e193b3f6469711a60ce66960efca6de19d9b9d58cf323f963689",
+    "task_comparison.json": "202a4532b0ae7045659854ca09627663b35d4b514e016404a71433f68facec35"
+  },
+  "note": "Independent verified snapshot; source files remain unchanged; archive files are read-only, not immutable storage"
+}

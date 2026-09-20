@@ -1,0 +1,28 @@
+{
+  "original_zip_sha256": "21433c9c1bad3e4b2c306f2ca2105e7246d189088eea7088dd8d08f4fce1a2d2",
+  "original_exported_files_verified": 5731,
+  "original_simulation_reports": 50,
+  "recorded_robocasa_versions": [
+    "1.0.1"
+  ],
+  "static_checks_passed": [
+    "worker AST unchanged except path assignments",
+    "synthetic runtime preparation",
+    "original asset verifier on relocated fixture",
+    "existing output rejection",
+    "historical results excluded from fresh runtime"
+  ],
+  "new_gpu_rollout_run": false,
+  "standalone_reproduction_verified": false,
+  "environment_inventory_pending": false,
+  "repository_upload_run": false,
+  "leaderboard_submission_run": false,
+  "preparation_version": 3,
+  "environment_resolution_pending": false,
+  "source_commit_recovery_complete": false,
+  "base_model_license_bundled": true,
+  "external_source_snapshot_files_verified": 891,
+  "external_source_assets_bundled": false,
+  "external_source_historical_identity_verified": false,
+  "observed_environment_version_lists_bundled": true
+}

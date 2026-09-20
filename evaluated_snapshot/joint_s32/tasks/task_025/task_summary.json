@@ -1,0 +1,14 @@
+{
+  "task_index": 25,
+  "task_name": "RinseSinkBasin",
+  "task_group": "composite_seen",
+  "protocol_sha256": "ae04489ecf03b1eca3250d1302c866d1f5f8657e4b9be1d5d3f772ae12c0c371",
+  "expected_episodes": 50,
+  "completed_episodes": 50,
+  "successes": 5,
+  "engineering_complete": true,
+  "last_job_id": "1514973",
+  "last_error": null,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000"
+}

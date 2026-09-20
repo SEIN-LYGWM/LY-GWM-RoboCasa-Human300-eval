@@ -1,0 +1,14 @@
+{
+  "worker_sha256": "f61ce98e3b9ae3fe3f48aa4a6d650759ce0f9a92f2661f13f59db2666ea41dde",
+  "adapter_sha256": "9a47e4618e1aeb1cceb9f430c136ed926aba5dae2f3408ebad10c8b0ad1f2104",
+  "graph_sha256": "e8fdf8fa6c266e574d93a30b5424da24a99054432cd4da5e10bdeb07f7bf8a24",
+  "lygwm_checkpoint": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/w5_graph_training_v1/best.pt",
+  "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+  "w5_config_sha256": "69aa1cd451dba2f9719106bc44d73305f180c7ee5290163568e20596c433825e",
+  "batch_sizes": [
+    1,
+    5
+  ],
+  "mode": "stateless_shadow_prediction; action_output_unchanged",
+  "rollout_run": false
+}

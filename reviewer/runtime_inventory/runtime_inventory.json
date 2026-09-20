@@ -1,0 +1,893 @@
+{
+  "collected_at": "2026-09-20T14:39:07.981013+00:00",
+  "scope": "Current read-only environment inventory; not proof of historical environment identity",
+  "training_run": false,
+  "rollout_run": false,
+  "gpu_job_submitted": false,
+  "packages_installed": false,
+  "environments": {
+    "policy": {
+      "python": "3.10.15 (main, Oct  3 2024, 07:21:53) [GCC 11.2.0]",
+      "prefix": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121",
+      "machine": "aarch64",
+      "packages": [
+        {
+          "name": "accelerate",
+          "version": "1.2.1"
+        },
+        {
+          "name": "albucore",
+          "version": "0.0.17"
+        },
+        {
+          "name": "albumentations",
+          "version": "1.4.18"
+        },
+        {
+          "name": "annotated-types",
+          "version": "0.7.0"
+        },
+        {
+          "name": "astunparse",
+          "version": "1.6.3"
+        },
+        {
+          "name": "attrs",
+          "version": "24.2.0"
+        },
+        {
+          "name": "av",
+          "version": "12.3.0"
+        },
+        {
+          "name": "certifi",
+          "version": "2024.8.30"
+        },
+        {
+          "name": "certifi",
+          "version": "2025.1.31"
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.4.0"
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.4.1"
+        },
+        {
+          "name": "click",
+          "version": "8.1.8"
+        },
+        {
+          "name": "diffusers",
+          "version": "0.30.2"
+        },
+        {
+          "name": "dm-tree",
+          "version": "0.1.8"
+        },
+        {
+          "name": "docstring_parser",
+          "version": "0.16"
+        },
+        {
+          "name": "einops",
+          "version": "0.8.1"
+        },
+        {
+          "name": "eval_type_backport",
+          "version": "0.2.2"
+        },
+        {
+          "name": "exceptiongroup",
+          "version": "1.2.2"
+        },
+        {
+          "name": "expecttest",
+          "version": "0.2.1"
+        },
+        {
+          "name": "filelock",
+          "version": "3.16.1"
+        },
+        {
+          "name": "filelock",
+          "version": "3.18.0"
+        },
+        {
+          "name": "flash_attn",
+          "version": "2.7.1.post4"
+        },
+        {
+          "name": "fsspec",
+          "version": "2024.10.0"
+        },
+        {
+          "name": "fsspec",
+          "version": "2025.3.2"
+        },
+        {
+          "name": "gitdb",
+          "version": "4.0.12"
+        },
+        {
+          "name": "GitPython",
+          "version": "3.1.44"
+        },
+        {
+          "name": "huggingface-hub",
+          "version": "0.30.2"
+        },
+        {
+          "name": "hypothesis",
+          "version": "6.119.3"
+        },
+        {
+          "name": "idna",
+          "version": "3.10"
+        },
+        {
+          "name": "imageio",
+          "version": "2.37.0"
+        },
+        {
+          "name": "importlib_metadata",
+          "version": "8.6.1"
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.4"
+        },
+        {
+          "name": "lazy_loader",
+          "version": "0.4"
+        },
+        {
+          "name": "lintrunner",
+          "version": "0.12.5"
+        },
+        {
+          "name": "markdown-it-py",
+          "version": "3.0.0"
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.2"
+        },
+        {
+          "name": "mdurl",
+          "version": "0.1.2"
+        },
+        {
+          "name": "mpmath",
+          "version": "1.3.0"
+        },
+        {
+          "name": "networkx",
+          "version": "3.4.2"
+        },
+        {
+          "name": "ninja",
+          "version": "1.11.1.1"
+        },
+        {
+          "name": "ninja",
+          "version": "1.11.1.3"
+        },
+        {
+          "name": "numpy",
+          "version": "1.26.4"
+        },
+        {
+          "name": "numpy",
+          "version": "2.1.3"
+        },
+        {
+          "name": "numpydantic",
+          "version": "1.6.7"
+        },
+        {
+          "name": "opencv-python-headless",
+          "version": "4.11.0.86"
+        },
+        {
+          "name": "optree",
+          "version": "0.13.1"
+        },
+        {
+          "name": "packaging",
+          "version": "24.2"
+        },
+        {
+          "name": "pandas",
+          "version": "2.2.3"
+        },
+        {
+          "name": "peft",
+          "version": "0.17.0"
+        },
+        {
+          "name": "pillow",
+          "version": "11.0.0"
+        },
+        {
+          "name": "pip",
+          "version": "23.0.1"
+        },
+        {
+          "name": "pip",
+          "version": "24.2"
+        },
+        {
+          "name": "platformdirs",
+          "version": "4.3.7"
+        },
+        {
+          "name": "protobuf",
+          "version": "3.20.3"
+        },
+        {
+          "name": "psutil",
+          "version": "6.1.0"
+        },
+        {
+          "name": "psutil",
+          "version": "7.0.0"
+        },
+        {
+          "name": "pyarrow",
+          "version": "19.0.1"
+        },
+        {
+          "name": "pydantic",
+          "version": "2.10.6"
+        },
+        {
+          "name": "pydantic_core",
+          "version": "2.27.2"
+        },
+        {
+          "name": "Pygments",
+          "version": "2.19.1"
+        },
+        {
+          "name": "python-dateutil",
+          "version": "2.9.0.post0"
+        },
+        {
+          "name": "pytz",
+          "version": "2025.2"
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.2"
+        },
+        {
+          "name": "pyzmq",
+          "version": "26.2.1"
+        },
+        {
+          "name": "regex",
+          "version": "2024.11.6"
+        },
+        {
+          "name": "requests",
+          "version": "2.32.3"
+        },
+        {
+          "name": "rich",
+          "version": "13.9.4"
+        },
+        {
+          "name": "safetensors",
+          "version": "0.5.3"
+        },
+        {
+          "name": "scikit-image",
+          "version": "0.25.2"
+        },
+        {
+          "name": "scipy",
+          "version": "1.15.3"
+        },
+        {
+          "name": "sentry-sdk",
+          "version": "2.26.1"
+        },
+        {
+          "name": "setuptools",
+          "version": "72.1.0"
+        },
+        {
+          "name": "setuptools",
+          "version": "75.8.0"
+        },
+        {
+          "name": "shtab",
+          "version": "1.7.2"
+        },
+        {
+          "name": "six",
+          "version": "1.16.0"
+        },
+        {
+          "name": "six",
+          "version": "1.17.0"
+        },
+        {
+          "name": "smmap",
+          "version": "5.0.2"
+        },
+        {
+          "name": "sortedcontainers",
+          "version": "2.4.0"
+        },
+        {
+          "name": "sympy",
+          "version": "1.13.1"
+        },
+        {
+          "name": "tifffile",
+          "version": "2025.3.30"
+        },
+        {
+          "name": "timm",
+          "version": "1.0.14"
+        },
+        {
+          "name": "tokenizers",
+          "version": "0.21.1"
+        },
+        {
+          "name": "torch",
+          "version": "2.5.1+cu121"
+        },
+        {
+          "name": "torchaudio",
+          "version": "2.5.1a0+1661daf"
+        },
+        {
+          "name": "torchvision",
+          "version": "0.20.1a0+3ac97aa"
+        },
+        {
+          "name": "tqdm",
+          "version": "4.67.1"
+        },
+        {
+          "name": "transformers",
+          "version": "4.51.3"
+        },
+        {
+          "name": "triton",
+          "version": "3.0.0"
+        },
+        {
+          "name": "typeguard",
+          "version": "4.4.2"
+        },
+        {
+          "name": "types-dataclasses",
+          "version": "0.6.6"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.12.2"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.13.2"
+        },
+        {
+          "name": "tyro",
+          "version": "0.9.17"
+        },
+        {
+          "name": "tzdata",
+          "version": "2025.2"
+        },
+        {
+          "name": "urllib3",
+          "version": "2.2.3"
+        },
+        {
+          "name": "urllib3",
+          "version": "2.3.0"
+        },
+        {
+          "name": "wandb",
+          "version": "0.23.0"
+        },
+        {
+          "name": "wheel",
+          "version": "0.44.0"
+        },
+        {
+          "name": "wheel",
+          "version": "0.45.1"
+        },
+        {
+          "name": "wrapt",
+          "version": "1.17.2"
+        },
+        {
+          "name": "zipp",
+          "version": "3.21.0"
+        }
+      ]
+    },
+    "simulation": {
+      "python": "3.10.15 (main, Oct  3 2024, 07:21:53) [GCC 11.2.0]",
+      "prefix": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/robocasa101_sim_py310_t251_cu121",
+      "machine": "aarch64",
+      "packages": [
+        {
+          "name": "absl-py",
+          "version": "2.2.2"
+        },
+        {
+          "name": "astunparse",
+          "version": "1.6.3"
+        },
+        {
+          "name": "attrs",
+          "version": "24.2.0"
+        },
+        {
+          "name": "certifi",
+          "version": "2024.8.30"
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.4.0"
+        },
+        {
+          "name": "cloudpickle",
+          "version": "3.1.1"
+        },
+        {
+          "name": "Cython",
+          "version": "3.0.12"
+        },
+        {
+          "name": "etils",
+          "version": "1.12.2"
+        },
+        {
+          "name": "evdev",
+          "version": "1.9.1"
+        },
+        {
+          "name": "exceptiongroup",
+          "version": "1.2.2"
+        },
+        {
+          "name": "exceptiongroup",
+          "version": "1.2.2"
+        },
+        {
+          "name": "expecttest",
+          "version": "0.2.1"
+        },
+        {
+          "name": "Farama-Notifications",
+          "version": "0.0.4"
+        },
+        {
+          "name": "filelock",
+          "version": "3.16.1"
+        },
+        {
+          "name": "fsspec",
+          "version": "2024.10.0"
+        },
+        {
+          "name": "fsspec",
+          "version": "2025.3.2"
+        },
+        {
+          "name": "glfw",
+          "version": "2.9.0"
+        },
+        {
+          "name": "gymnasium",
+          "version": "1.0.0"
+        },
+        {
+          "name": "h5py",
+          "version": "3.13.0"
+        },
+        {
+          "name": "hidapi",
+          "version": "0.14.0.post4"
+        },
+        {
+          "name": "hypothesis",
+          "version": "6.119.3"
+        },
+        {
+          "name": "idna",
+          "version": "3.10"
+        },
+        {
+          "name": "imageio",
+          "version": "2.37.0"
+        },
+        {
+          "name": "importlib_resources",
+          "version": "6.5.2"
+        },
+        {
+          "name": "iniconfig",
+          "version": "2.1.0"
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.4"
+        },
+        {
+          "name": "lintrunner",
+          "version": "0.12.5"
+        },
+        {
+          "name": "llvmlite",
+          "version": "0.44.0"
+        },
+        {
+          "name": "lxml",
+          "version": "5.3.2"
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.2"
+        },
+        {
+          "name": "mpmath",
+          "version": "1.3.0"
+        },
+        {
+          "name": "mujoco",
+          "version": "3.3.1"
+        },
+        {
+          "name": "networkx",
+          "version": "3.4.2"
+        },
+        {
+          "name": "ninja",
+          "version": "1.11.1.1"
+        },
+        {
+          "name": "numba",
+          "version": "0.61.2"
+        },
+        {
+          "name": "numpy",
+          "version": "2.1.3"
+        },
+        {
+          "name": "numpy",
+          "version": "2.2.5"
+        },
+        {
+          "name": "opencv-python",
+          "version": "4.11.0.86"
+        },
+        {
+          "name": "optree",
+          "version": "0.13.1"
+        },
+        {
+          "name": "packaging",
+          "version": "24.2"
+        },
+        {
+          "name": "packaging",
+          "version": "24.2"
+        },
+        {
+          "name": "pillow",
+          "version": "11.0.0"
+        },
+        {
+          "name": "pip",
+          "version": "23.0.1"
+        },
+        {
+          "name": "pip",
+          "version": "24.2"
+        },
+        {
+          "name": "pluggy",
+          "version": "1.5.0"
+        },
+        {
+          "name": "psutil",
+          "version": "6.1.0"
+        },
+        {
+          "name": "pygame",
+          "version": "2.6.1"
+        },
+        {
+          "name": "pynput",
+          "version": "1.8.1"
+        },
+        {
+          "name": "PyOpenGL",
+          "version": "3.1.9"
+        },
+        {
+          "name": "pytest",
+          "version": "8.3.5"
+        },
+        {
+          "name": "python-xlib",
+          "version": "0.33"
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.2"
+        },
+        {
+          "name": "pyzmq",
+          "version": "26.2.1"
+        },
+        {
+          "name": "qpsolvers",
+          "version": "4.7.0"
+        },
+        {
+          "name": "quadprog",
+          "version": "0.1.13"
+        },
+        {
+          "name": "requests",
+          "version": "2.32.3"
+        },
+        {
+          "name": "scipy",
+          "version": "1.15.3"
+        },
+        {
+          "name": "setuptools",
+          "version": "72.1.0"
+        },
+        {
+          "name": "setuptools",
+          "version": "75.8.0"
+        },
+        {
+          "name": "six",
+          "version": "1.16.0"
+        },
+        {
+          "name": "six",
+          "version": "1.17.0"
+        },
+        {
+          "name": "sortedcontainers",
+          "version": "2.4.0"
+        },
+        {
+          "name": "sympy",
+          "version": "1.13.1"
+        },
+        {
+          "name": "termcolor",
+          "version": "2.5.0"
+        },
+        {
+          "name": "tomli",
+          "version": "2.2.1"
+        },
+        {
+          "name": "torch",
+          "version": "2.5.1+cu121"
+        },
+        {
+          "name": "torchaudio",
+          "version": "2.5.1a0+1661daf"
+        },
+        {
+          "name": "torchvision",
+          "version": "0.20.1a0+3ac97aa"
+        },
+        {
+          "name": "tqdm",
+          "version": "4.67.1"
+        },
+        {
+          "name": "types-dataclasses",
+          "version": "0.6.6"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.12.2"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.13.2"
+        },
+        {
+          "name": "urllib3",
+          "version": "2.2.3"
+        },
+        {
+          "name": "wheel",
+          "version": "0.44.0"
+        },
+        {
+          "name": "wheel",
+          "version": "0.45.1"
+        },
+        {
+          "name": "zipp",
+          "version": "3.21.0"
+        }
+      ]
+    }
+  },
+  "external_sources": {
+    "gr00t": {
+      "path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603",
+      "exists": true,
+      "git_commit": null,
+      "git_commit_available": false,
+      "git_status": null,
+      "git_status_available": false
+    },
+    "robocasa": {
+      "path": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robocasa",
+      "exists": true,
+      "git_commit": null,
+      "git_commit_available": false,
+      "git_status": null,
+      "git_status_available": false
+    },
+    "robosuite": {
+      "path": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite",
+      "exists": true,
+      "git_commit": null,
+      "git_commit_available": false,
+      "git_status": null,
+      "git_status_available": false
+    },
+    "robomimic": {
+      "path": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robomimic",
+      "exists": true,
+      "git_commit": null,
+      "git_commit_available": false,
+      "git_status": null,
+      "git_status_available": false
+    }
+  },
+  "copied_files": {
+    "source_records/gr00t/LICENSE": {
+      "source": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    "source_records/gr00t/pyproject.toml": {
+      "source": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/01_source/Isaac-GR00T-9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10_s5_source_recovery_20260909_140603/pyproject.toml",
+      "sha256": "975e5c6e318eaf82f8c03b927272d55023cb7d445caeff13800bb0c18802baf1"
+    },
+    "source_records/robocasa/setup.py": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robocasa/setup.py",
+      "sha256": "9bb7055c345a50c69417c9978277f82a0d782ae17cb369939a35e5faaa6a83e5"
+    },
+    "source_records/robocasa/requirements.txt": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robocasa/requirements.txt",
+      "sha256": "0cac0e472eba3359aa79e9674ff11a5fd0484b9c465fc1cb774c30938edcc5d7"
+    },
+    "source_records/robosuite/LICENSE": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite/LICENSE",
+      "sha256": "177978cbece0a4c454c2aaec5b3f145b39270814874c43109da9e829c39d9cba"
+    },
+    "source_records/robosuite/pyproject.toml": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite/pyproject.toml",
+      "sha256": "18f793488e126b1332e81bb13e46ca4934179f262799f6b91d84e96dca48a450"
+    },
+    "source_records/robosuite/setup.py": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite/setup.py",
+      "sha256": "4012caf2be41be8df4230458c70c962d50d01127c4a08bda7c385e981fd2e7fd"
+    },
+    "source_records/robosuite/requirements-extra.txt": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite/requirements-extra.txt",
+      "sha256": "16de6a15efc6f24840e76584785f0d6f9c6df5fdf91f79c4656289ec97d31a76"
+    },
+    "source_records/robosuite/requirements.txt": {
+      "source": "/home/bingxing2/home/scx9fvq/LY-GWM-RC/third_party/robosuite/requirements.txt",
+      "sha256": "0cac0e472eba3359aa79e9674ff11a5fd0484b9c465fc1cb774c30938edcc5d7"
+    },
+    "base_model_notices/LICENSE": {
+      "source": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/00_offline_assets/inbox/r1_gr00t_n15_base/payload/LICENSE",
+      "sha256": "fdc54058d8b52bbb3b06c924326ff95a15687b08b15f92bc63adabc291638c89"
+    }
+  },
+  "errors": [],
+  "base_model_license_found": true,
+  "processor_files": [
+    {
+      "name": "added_tokens.json",
+      "bytes": 940,
+      "sha256": "f6ec4747ee9acf6681f3e146371cf44bce6edd8d3018c504b976268857b6cc31"
+    },
+    {
+      "name": "chat_template.json",
+      "bytes": 1024,
+      "sha256": "12571c3e7ddce074f86a78daf21d9a81616c6f8eac19a20ca2fb558a0c9e759b"
+    },
+    {
+      "name": "config.json",
+      "bytes": 2348,
+      "sha256": "e6957b163b6c62b685f69fd9d601e183509d109246290ad579d461692d925dba"
+    },
+    {
+      "name": "configuration_eagle2_5_vl.py",
+      "bytes": 6059,
+      "sha256": "d1578a2d5b7654da9a5e4cb18acd5d9d92b04a227ddab9365c2e3265d6cf2f93"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 120,
+      "sha256": "7c36606c58ba30e8dfbc269cb542d93ee72889ebec5fcf3a5071b66451e8cfe1"
+    },
+    {
+      "name": "image_processing_eagle2.py",
+      "bytes": 35597,
+      "sha256": "e5d152ebaecca99ad730b9efaaec1029ba242857857914cd8edcb0c1181f411c"
+    },
+    {
+      "name": "image_processing_eagle2_5_vl_fast.py",
+      "bytes": 19245,
+      "sha256": "c972b2f11523176f8f908356374892cd5d358e1623f071c39ff82222820f9d88"
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 1671852,
+      "sha256": "85407d96ccd088398c5df07b7c764ed04dcc084b0e746f70016c16968be5e490"
+    },
+    {
+      "name": "modeling_eagle2_5_vl.py",
+      "bytes": 17562,
+      "sha256": "96554c1ca204cc6fb0bff636356b1f878d2ee47678b4a82e6378b59e98bb01d0"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "bytes": 1026,
+      "sha256": "2d860eacf203d617d4c7ecca4125513b35ace1827b39ef8c0c1e45276e30f0e9"
+    },
+    {
+      "name": "processing_eagle2_5_vl.py",
+      "bytes": 37348,
+      "sha256": "db9645a45133978568beb735b1d25042968e05dfdf3e562d18523342389577e7"
+    },
+    {
+      "name": "processor_config.json",
+      "bytes": 521,
+      "sha256": "27e81bc3e0035c64987dd06870025c301ea6c5dd02f5d091cb463b7c84432ef8"
+    },
+    {
+      "name": "radio_model.py",
+      "bytes": 29716,
+      "sha256": "5a4338eb7617606565189b3cec9827c4ca2559c9178ae3a9873e6fb37724d514"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 780,
+      "sha256": "a9086ab96352d779cbeb3665d1142a895540aec404d90641b2e2380d5dbb02b1"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 11948,
+      "sha256": "f58bacf742418429534015ac1c4f7a1a555db55d3fba48858f38ebb75a2a5660"
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 3383406,
+      "sha256": "70f7cdb5ae22072d590b59fd726c9799e678a77701d32e87cd7b7106ed2a8ce8"
+    }
+  ],
+  "inventory_completed": true
+}

@@ -1,0 +1,59 @@
+{
+  "job_id": "1515722",
+  "node": "paraai-n32-h-01-agent-7",
+  "role": "server",
+  "accepted": true,
+  "closed_loop_accepted": false,
+  "model_loaded": true,
+  "rollout_run": false,
+  "training_run": false,
+  "packages_installed": false,
+  "formal_target50_evaluation": true,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "protocol_sha256": "ae04489ecf03b1eca3250d1302c866d1f5f8657e4b9be1d5d3f772ae12c0c371",
+  "lygwm_loaded": true,
+  "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+  "shadow_outputs_influence_actions": false,
+  "shadow_forward_count": 1690,
+  "shadow_prediction_samples": 8450,
+  "shadow_graph_seconds_total": 5.20080093216895,
+  "gpu_name": "NVIDIA A100-PCIE-40GB",
+  "successful_requests": 1690,
+  "handler_errors": 0,
+  "first_shadow_prediction": {
+    "call": 1,
+    "batch_size": 5,
+    "finite": true,
+    "feature_shape": [
+      5,
+      16,
+      2048
+    ],
+    "state_shape": [
+      5,
+      20
+    ],
+    "graph_seconds": 0.01306544017791748,
+    "feature_mean": 2.285908067278797e-06,
+    "state_mean": 0.07262051105499268
+  },
+  "last_shadow_prediction": {
+    "call": 1690,
+    "batch_size": 5,
+    "finite": true,
+    "feature_shape": [
+      5,
+      16,
+      2048
+    ],
+    "state_shape": [
+      5,
+      20
+    ],
+    "graph_seconds": 0.0031705920696258544,
+    "feature_mean": 5.291553861752618e-06,
+    "state_mean": 0.05267329141497612
+  },
+  "cuda_peak_allocated_gib": 6.569
+}

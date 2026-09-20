@@ -1,0 +1,530 @@
+{
+  "python": "3.10.15 (main, Oct  3 2024, 07:21:53) [GCC 11.2.0]",
+  "prefix": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121",
+  "sys_path": [
+    "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python310.zip",
+    "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10",
+    "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/lib-dynload",
+    "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages",
+    "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+  ],
+  "machine": "aarch64",
+  "metadata_selected": {
+    "accelerate": {
+      "version": "1.2.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "albucore": {
+      "version": "0.0.17",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "albumentations": {
+      "version": "1.4.18",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "annotated-types": {
+      "version": "0.7.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "astunparse": {
+      "version": "1.6.3",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "attrs": {
+      "version": "24.2.0",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "av": {
+      "version": "12.3.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "certifi": {
+      "version": "2025.1.31",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "charset-normalizer": {
+      "version": "3.4.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "click": {
+      "version": "8.1.8",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "diffusers": {
+      "version": "0.30.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "dm-tree": {
+      "version": "0.1.8",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "docstring-parser": {
+      "version": "0.16",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "einops": {
+      "version": "0.8.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "eval-type-backport": {
+      "version": "0.2.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "exceptiongroup": {
+      "version": "1.2.2",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "expecttest": {
+      "version": "0.2.1",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "filelock": {
+      "version": "3.18.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "flash-attn": {
+      "version": "2.7.1.post4",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "fsspec": {
+      "version": "2025.3.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "gitdb": {
+      "version": "4.0.12",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "gitpython": {
+      "version": "3.1.44",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "huggingface-hub": {
+      "version": "0.30.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "hypothesis": {
+      "version": "6.119.3",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "idna": {
+      "version": "3.10",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "imageio": {
+      "version": "2.37.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "importlib-metadata": {
+      "version": "8.6.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "jinja2": {
+      "version": "3.1.4",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "lazy-loader": {
+      "version": "0.4",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "lintrunner": {
+      "version": "0.12.5",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "markdown-it-py": {
+      "version": "3.0.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "markupsafe": {
+      "version": "3.0.2",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "mdurl": {
+      "version": "0.1.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "mpmath": {
+      "version": "1.3.0",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "networkx": {
+      "version": "3.4.2",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "ninja": {
+      "version": "1.11.1.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "numpydantic": {
+      "version": "1.6.7",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "opencv-python-headless": {
+      "version": "4.11.0.86",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "optree": {
+      "version": "0.13.1",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "packaging": {
+      "version": "24.2",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "pandas": {
+      "version": "2.2.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "peft": {
+      "version": "0.17.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pillow": {
+      "version": "11.0.0",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "pip": {
+      "version": "23.0.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "platformdirs": {
+      "version": "4.3.7",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "protobuf": {
+      "version": "3.20.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "psutil": {
+      "version": "7.0.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pyarrow": {
+      "version": "19.0.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pydantic": {
+      "version": "2.10.6",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pydantic-core": {
+      "version": "2.27.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pygments": {
+      "version": "2.19.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "python-dateutil": {
+      "version": "2.9.0.post0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pytz": {
+      "version": "2025.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "pyyaml": {
+      "version": "6.0.2",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "pyzmq": {
+      "version": "26.2.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "regex": {
+      "version": "2024.11.6",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "requests": {
+      "version": "2.32.3",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "rich": {
+      "version": "13.9.4",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "safetensors": {
+      "version": "0.5.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "scikit-image": {
+      "version": "0.25.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "sentry-sdk": {
+      "version": "2.26.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "setuptools": {
+      "version": "75.8.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "shtab": {
+      "version": "1.7.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "six": {
+      "version": "1.17.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "smmap": {
+      "version": "5.0.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "sortedcontainers": {
+      "version": "2.4.0",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "sympy": {
+      "version": "1.13.1",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "tifffile": {
+      "version": "2025.3.30",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "timm": {
+      "version": "1.0.14",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "tokenizers": {
+      "version": "0.21.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "torch": {
+      "version": "2.5.1+cu121",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "torchaudio": {
+      "version": "2.5.1a0+1661daf",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "torchvision": {
+      "version": "0.20.1a0+3ac97aa",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "tqdm": {
+      "version": "4.67.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "transformers": {
+      "version": "4.51.3",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "triton": {
+      "version": "3.0.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "typeguard": {
+      "version": "4.4.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "types-dataclasses": {
+      "version": "0.6.6",
+      "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+    },
+    "typing-extensions": {
+      "version": "4.13.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "tyro": {
+      "version": "0.9.17",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "tzdata": {
+      "version": "2025.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "urllib3": {
+      "version": "2.3.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "wandb": {
+      "version": "0.23.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "wheel": {
+      "version": "0.45.1",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "wrapt": {
+      "version": "1.17.2",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    },
+    "zipp": {
+      "version": "3.21.0",
+      "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+    }
+  },
+  "duplicate_metadata": {
+    "filelock": [
+      {
+        "version": "3.18.0",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "3.16.1",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "psutil": [
+      {
+        "version": "7.0.0",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "6.1.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "numpy": [
+      {
+        "version": "1.26.4",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "2.1.3",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "urllib3": [
+      {
+        "version": "2.3.0",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "2.2.3",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "fsspec": [
+      {
+        "version": "2025.3.2",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "2024.10.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "certifi": [
+      {
+        "version": "2025.1.31",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "2024.8.30",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "setuptools": [
+      {
+        "version": "75.8.0",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "72.1.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "pip": [
+      {
+        "version": "23.0.1",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "24.2",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "charset-normalizer": [
+      {
+        "version": "3.4.1",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "3.4.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "typing-extensions": [
+      {
+        "version": "4.13.2",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "4.12.2",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "six": [
+      {
+        "version": "1.17.0",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "1.16.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "ninja": [
+      {
+        "version": "1.11.1.3",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "1.11.1.1",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ],
+    "wheel": [
+      {
+        "version": "0.45.1",
+        "location": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages"
+      },
+      {
+        "version": "0.44.0",
+        "location": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages"
+      }
+    ]
+  },
+  "module_locations": {
+    "numpy": {
+      "origin": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/numpy/__init__.py",
+      "search_locations": [
+        "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/numpy"
+      ]
+    },
+    "torch": {
+      "origin": "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages/torch/__init__.py",
+      "search_locations": [
+        "/home/bingxing2/apps/anaconda/2021.11/envs/py310torch251cu121/lib/python3.10/site-packages/torch"
+      ]
+    },
+    "transformers": {
+      "origin": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/transformers/__init__.py",
+      "search_locations": [
+        "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/transformers"
+      ]
+    },
+    "mujoco": null,
+    "gymnasium": null,
+    "flash_attn": {
+      "origin": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/flash_attn/__init__.py",
+      "search_locations": [
+        "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/flash_attn"
+      ]
+    }
+  },
+  "numpy_import": {
+    "version": "1.26.4",
+    "file": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/02_env/gr00t_n15_py310_t251_cu121/lib/python3.10/site-packages/numpy/__init__.py"
+  }
+}

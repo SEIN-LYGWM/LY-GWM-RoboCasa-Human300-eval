@@ -1,0 +1,136 @@
+{
+  "started_at": "2026-09-17T02:47:04+00:00",
+  "current_batch": null,
+  "submission_intent": null,
+  "completed_batches": [
+    {
+      "array_job_id": "1509595",
+      "task_indices": [
+        0
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1509991",
+      "task_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1510172",
+      "task_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1510363",
+      "task_indices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1511200",
+      "task_indices": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1511907",
+      "task_indices": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1512087",
+      "task_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "adopted": false
+    },
+    {
+      "array_job_id": "1512689",
+      "task_indices": [
+        49
+      ],
+      "adopted": false
+    }
+  ],
+  "protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "worker_sha256": "d8b05420db6225d96691acb37a1ebf6dba80a768b4afdcfecdb34c069ec3f440",
+  "job_sha256": "d19d84e331168ac6d8af036abc66999e015263f06e441241035016e9c0f5f84c",
+  "status": "completed",
+  "error": null,
+  "controller_pid": 1196535,
+  "controller_node": "paraai-n32-h-01-ccs-master-2",
+  "updated_at": "2026-09-18T09:06:24+00:00",
+  "totals": {
+    "completed_tasks": 50,
+    "valid_episodes": 2500,
+    "successes": 181,
+    "groups": {
+      "atomic_seen": {
+        "episodes": 900,
+        "successes": 141,
+        "success_rate": 0.15666666666666668
+      },
+      "composite_seen": {
+        "episodes": 800,
+        "successes": 25,
+        "success_rate": 0.03125
+      },
+      "composite_unseen": {
+        "episodes": 800,
+        "successes": 15,
+        "success_rate": 0.01875
+      }
+    }
+  },
+  "finished_at": "2026-09-18T09:06:24+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "training_completed": true,
+  "r5_accepted": true,
+  "formal_training_run": true,
+  "global_step": 120000,
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "global_batch_size": 128,
+  "samples_in_accepted_updates": 15360000,
+  "rollout_run": false,
+  "config_sha256": "9934fcce879f52414063b7cf9559eb5d3988e2deeb5fbe991279b95f2c0cd8c4"
+}

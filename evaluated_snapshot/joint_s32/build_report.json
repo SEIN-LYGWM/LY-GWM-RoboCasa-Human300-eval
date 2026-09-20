@@ -1,0 +1,41 @@
+{
+  "build_accepted": true,
+  "run_dir": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s32_pretrain50_lygwm_shadow",
+  "split": "pretrain",
+  "protocol_sha256": "ae04489ecf03b1eca3250d1302c866d1f5f8657e4b9be1d5d3f772ae12c0c371",
+  "worker_sha256": "a7127b2874389bc05fc98bb7db4e2a36bb538a56799f56ddc7817b26077b856f",
+  "baseline_protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "baseline_successes": 181,
+  "source_sha256": {
+    "worker.py": "d8b05420db6225d96691acb37a1ebf6dba80a768b4afdcfecdb34c069ec3f440",
+    "job.sh": "d19d84e331168ac6d8af036abc66999e015263f06e441241035016e9c0f5f84c",
+    "auto_submit.py": "9b9e6c0e0f4f3a90182a8b4fbc990bc40fd282706c20255ad9fd53ea437734e2",
+    "protocol.json": "bec5ffdd5583947ff247076f3563099695b82d70e83e152c14b1a3381b873ad0",
+    "target50_manifest.json": "9320d413162726c7ff38aa23a56ba8012e87c099b989b8d417a015fe50bd4b38"
+  },
+  "generated_file_sha256": {
+    "worker.py": "a7127b2874389bc05fc98bb7db4e2a36bb538a56799f56ddc7817b26077b856f",
+    "auto_submit.py": "1702b0ca93eea19968fe9eeac68f73cb3144f389df16195bdd3257512bfcef51",
+    "job.sh": "d19d84e331168ac6d8af036abc66999e015263f06e441241035016e9c0f5f84c",
+    "joint_audit.py": "79fdeda4132ef7374ffdcf5452c6103a367fc095ec397efd0cb871f0b8d8e9b6",
+    "shadow_adapter.py": "9a47e4618e1aeb1cceb9f430c136ed926aba5dae2f3408ebad10c8b0ad1f2104",
+    "graph_model.py": "e8fdf8fa6c266e574d93a30b5424da24a99054432cd4da5e10bdeb07f7bf8a24",
+    "lygwm-best.pt": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+    "protocol.json": "327a2363e8e4a3803246432f01a07bd3192c0e8d77541f12067f38446878fe2d",
+    "target50_manifest.json": "9320d413162726c7ff38aa23a56ba8012e87c099b989b8d417a015fe50bd4b38",
+    "baseline_episode_outcomes.json": "d090a3140ef587ad9cee922d7b186d795ef44f493ac6e380cfea032847b8b036"
+  },
+  "task_count": 50,
+  "total_episodes": 2500,
+  "maximum_concurrent_gpu_jobs": 8,
+  "gpus_per_job": 1,
+  "environment_slots_per_job": 5,
+  "initial_task_count": 1,
+  "initial_task_episodes_count_toward_final": true,
+  "simulation_function_unchanged": true,
+  "w6_adapter_unchanged": true,
+  "shadow_outputs_influence_actions": false,
+  "packages_installed": false,
+  "baseline_modified": false,
+  "gr00t_updated": false
+}

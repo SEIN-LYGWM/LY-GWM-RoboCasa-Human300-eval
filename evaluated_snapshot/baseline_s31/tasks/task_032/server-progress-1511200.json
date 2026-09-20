@@ -1,0 +1,18 @@
+{
+  "job_id": "1511200",
+  "node": "paraai-n32-h-01-agent-83",
+  "role": "server",
+  "accepted": false,
+  "closed_loop_accepted": false,
+  "model_loaded": true,
+  "rollout_run": false,
+  "training_run": false,
+  "packages_installed": false,
+  "formal_target50_evaluation": true,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "gpu_name": "NVIDIA A100-PCIE-40GB",
+  "successful_requests": 0,
+  "handler_errors": 0
+}

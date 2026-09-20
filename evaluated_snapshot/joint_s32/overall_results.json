@@ -1,0 +1,58 @@
+{
+  "completed_tasks": 50,
+  "valid_episodes": 2500,
+  "successes": 200,
+  "groups": {
+    "atomic_seen": {
+      "episodes": 900,
+      "successes": 141,
+      "success_rate": 0.15666666666666668
+    },
+    "composite_seen": {
+      "episodes": 800,
+      "successes": 40,
+      "success_rate": 0.05
+    },
+    "composite_unseen": {
+      "episodes": 800,
+      "successes": 19,
+      "success_rate": 0.02375
+    }
+  },
+  "all_2500_completed": true,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "training_config_sha256": "9934fcce879f52414063b7cf9559eb5d3988e2deeb5fbe991279b95f2c0cd8c4",
+  "overall_success_rate": 0.08,
+  "protocol_sha256": "ae04489ecf03b1eca3250d1302c866d1f5f8657e4b9be1d5d3f772ae12c0c371",
+  "w7_rollout_accepted": true,
+  "model_name": "LY-GWM-GR00T-N1.5-Human300",
+  "joint_mode": "learned_graph_dynamics_shadow_prediction",
+  "shadow_outputs_influence_actions": false,
+  "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+  "gr00t_parameters": 2724163520,
+  "lygwm_parameters": 10237204,
+  "combined_parameters": 2734400724,
+  "shadow_execution_audit": {
+    "shadow_forward_count": 56760,
+    "shadow_prediction_samples": 283800,
+    "episode_request_coverage_accepted": true
+  },
+  "baseline_comparison": {
+    "paired_episodes": 2500,
+    "baseline_successes": 181,
+    "joint_successes": 200,
+    "baseline_success_rate": 0.0724,
+    "joint_success_rate": 0.08,
+    "success_rate_difference_percentage_points": 0.76,
+    "observed_success_count_not_lower": true,
+    "all_paired_success_outcomes_identical": false,
+    "outcomes": {
+      "both_success": 123,
+      "both_failure": 2242,
+      "baseline_success_joint_failure": 58,
+      "baseline_failure_joint_success": 77
+    },
+    "scope": "Same manifest, seeds and environment protocol; descriptive comparison, not proof of general non-inferiority or LY-GWM benefit"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "build_accepted": true,
+  "run_dir": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s31_pretrain50_selftrained",
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "protocol_sha256": "ee15b8a67247a3f37f6e137c222e0b79cc1801c6d0ab539ec6db247e32bbc943",
+  "worker_sha256": "d8b05420db6225d96691acb37a1ebf6dba80a768b4afdcfecdb34c069ec3f440",
+  "task_count": 50,
+  "total_episodes": 2500,
+  "maximum_concurrent_gpu_jobs": 8,
+  "gpus_per_job": 1,
+  "environment_slots_per_job": 5,
+  "initial_task_count": 1,
+  "initial_task_episodes_count_toward_final": true,
+  "source_sha256": {
+    "worker.py": "1713afbbd54c43600a879df85ed08d566f6cf5f5453be66badfee489b50f007d",
+    "job.sh": "d19d84e331168ac6d8af036abc66999e015263f06e441241035016e9c0f5f84c",
+    "auto_submit.py": "d92b1278341b456c80f5ec8d5af984249c7b52098d9b7c1bdd15bf22bbeae9ee"
+  },
+  "packages_installed": false,
+  "generated_file_sha256": {
+    "worker.py": "d8b05420db6225d96691acb37a1ebf6dba80a768b4afdcfecdb34c069ec3f440",
+    "job.sh": "d19d84e331168ac6d8af036abc66999e015263f06e441241035016e9c0f5f84c",
+    "auto_submit.py": "9b9e6c0e0f4f3a90182a8b4fbc990bc40fd282706c20255ad9fd53ea437734e2",
+    "protocol.json": "bec5ffdd5583947ff247076f3563099695b82d70e83e152c14b1a3381b873ad0",
+    "target50_manifest.json": "9320d413162726c7ff38aa23a56ba8012e87c099b989b8d417a015fe50bd4b38"
+  }
+}
