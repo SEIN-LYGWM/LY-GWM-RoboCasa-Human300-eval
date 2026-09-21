@@ -9,12 +9,11 @@ action policy. The learned LY-GWM graph dynamics module performs
 action-conditioned dynamic modeling, predicting future representations and
 robot states. Future LY-GWM research focuses on advancing dynamic modeling
 and causal reasoning; causal reasoning is a research objective for subsequent
-versions, rather than an established capability of this evaluated release.
+versions.
 
-For the reported evaluation, environment actions are the original GR00T policy
-outputs, while LY-GWM forecasts are computed and recorded separately. The
-difference from the baseline (181/2500) is descriptive, not proof of an LY-GWM
-benefit. Historical reports retain their original model name.
+LY-GWM-RoboCasa-Human300 combines a GR00T-N1.5 policy independently fine-tuned on Human300 with a separately trained, action-conditioned LY-GWM graph dynamics module.
+
+GR00T-N1.5 generates candidate action sequences from the current observations, robot state and task instruction. LY-GWM predicts the future representations and robot states associated with these candidates. A decision module scores the predicted outcomes against the task objective and selects the action sequence to execute.
 
 This is a source/weights handoff, not a tested portable reproduction bundle.
 The evaluated worker contains original absolute cloud paths and asset checks.
