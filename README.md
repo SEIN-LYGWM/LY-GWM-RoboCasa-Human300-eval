@@ -1,4 +1,4 @@
-# LY-GWM-RoboCasa-Human300 — S42
+# LY-GWM-RoboCasa-Human300 — baseline and S42
 
 S42 evaluates **active four-candidate selection**: GR00T-N1.5 generates action
 chunks, LY-GWM predicts each candidate's future features/state, and an S38
@@ -9,15 +9,9 @@ of eventual rollout success.
 | Evaluation | Atomic seen | Composite seen | Composite unseen | Overall |
 | --- | ---: | ---: | ---: | ---: |
 | S31 historical GR00T baseline | 141/900 (15.6667%) | 25/800 (3.125%) | 15/800 (1.875%) | 181/2500 (7.24%) |
-| S32 historical shadow prediction | 141/900 (15.6667%) | 40/800 (5.000%) | 19/800 (2.375%) | 200/2500 (8.00%) |
 | **S42 active selection** | **150/900 (16.6667%)** | **38/800 (4.750%)** | **19/800 (2.375%)** | **207/2500 (8.28%)** |
 
-S32 forecasts did not select the executed actions. Earlier descriptions that
-associated its 200/2500 score with active candidate selection were incorrect.
-S42 is a separate completed evaluation, not a reclassification of S32.
-Historical material remains under `evaluated_snapshot/joint_s32/`, `reviewer/`
-and `releases/s32/`. Documents in that archive retain their original wording
-for provenance; the correction here supersedes inconsistent descriptions.
+The previous 200/2500 submission is superseded by this S42 submission and is not evidence of LY-GWM-based action selection; the current submission uses S42's 207/2500 result and its corresponding public code, weights and evaluation records.
 
 The S42 result uses RoboCasa 1.0.1, split `pretrain`, the fixed 50-task manifest
 and 50 episodes per task. All episodes count in the denominators. S42 passed

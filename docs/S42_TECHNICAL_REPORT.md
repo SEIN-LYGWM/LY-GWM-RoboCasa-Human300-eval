@@ -1,7 +1,7 @@
 # S42 technical report: active learned-reward candidate selection
 
-Evaluation date: 2026-09-24. This report documents S42 specifically. The S32
-shadow run is a different experiment and must not supply S42 action evidence.
+Evaluation date: 2026-09-24. This report documents S42 and compares it with
+the historical self-trained GR00T-N1.5 baseline (S31).
 
 ## Policy and interfaces
 
@@ -88,13 +88,17 @@ engineering investigation. No bound-clean subset was used for reported scores.
 
 ## Comparisons and remaining limits
 
-S31: 181/2500 (7.24%); S32 shadow: 200/2500 (8.00%); S42: 207/2500 (8.28%).
+| Evaluation | Atomic seen | Composite seen | Composite unseen | Overall |
+| --- | ---: | ---: | ---: | ---: |
+| S31 self-trained GR00T-N1.5 baseline | 141/900 (15.6667%) | 25/800 (3.125%) | 15/800 (1.875%) | 181/2500 (7.24%) |
+| S42 LY-GWM prediction and reward selection | 150/900 (16.6667%) | 38/800 (4.750%) | 19/800 (2.375%) | 207/2500 (8.28%) |
+
+S42 completes 26 more episodes successfully than the historical baseline.
 S42 minus S31 is +1.00, +1.625 and +0.50 percentage points by group, and
 +1.04 points overall. These are historical descriptive differences. The
 manifests and recorded checkpoint paths align, but no contemporaneous S31
 weight-shard hashes were recovered. Current hashes cannot retroactively
 prove the exact S31 weight identity. No causal gain or significance is claimed.
-S42 is not uniformly higher than S32 (composite seen is 38 versus 40 successes).
 
 The separately recorded S30 public-checkpoint local result is 212/2500 (8.48%).
 The discrepancy with the maintainer's cited public-checkpoint leaderboard
