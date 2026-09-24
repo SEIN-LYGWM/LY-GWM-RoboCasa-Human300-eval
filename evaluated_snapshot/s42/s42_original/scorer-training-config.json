@@ -1,0 +1,27 @@
+{
+  "version": "S38_REWARD_HEAD_V1",
+  "seed": 4892038,
+  "epochs": 5,
+  "batch_size": 512,
+  "learning_rate": 0.0003,
+  "labels_root": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/s37_reward_labels_v1",
+  "cache_root": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/w4_frozen_feature_cache",
+  "graph_checkpoint": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s32_pretrain50_lygwm_shadow/lygwm-best.pt",
+  "code_sha256": {
+    "worker.py": "52ef967efff2747bb11e9a0d34fa8a76a212203d87bcdb431ff04dfbecbe78b3",
+    "reward_model.py": "4cfa4f35d5e64ed1355f8f284780c96adb1e0cecb3f7de3b0127ae1d67d4dd00",
+    "graph_model.py": "e8fdf8fa6c266e574d93a30b5424da24a99054432cd4da5e10bdeb07f7bf8a24",
+    "job.sh": "627354f56df75884810f44abb9498fb8f7ee7fb4eae10a181abc543366aff2f4"
+  },
+  "input_sha256": {
+    "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/s37_reward_labels_v1/contract.json": "8218e872d5349b9ddd311ff2b6abfb47c757a161e1603ec3771f08cb2e31de5d",
+    "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/s37_reward_labels_v1/build_report.json": "477b590dbdfee7480f235d17839e3f8af1f9ef8aacc8525e7f0fe6cdc17ba627",
+    "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/05_lygwm/w4_frozen_feature_cache/cache_contract.json": "d77adc994e41bb4d8ed9c23a1418c7cc885ddedc554b3b6b902f0de2da809719",
+    "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s32_pretrain50_lygwm_shadow/lygwm-best.pt": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1"
+  },
+  "target": "same-frame binary recorded reward, current and future observations",
+  "selection": "best observed-validation BCE; predictions used only for final diagnostic",
+  "frozen_gr00t": true,
+  "frozen_lygwm": true,
+  "automatic_rollout": false
+}

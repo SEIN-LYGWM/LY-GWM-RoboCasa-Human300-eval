@@ -1,0 +1,14 @@
+{
+  "task_index": 46,
+  "task_name": "SeparateFreezerRack",
+  "task_group": "composite_unseen",
+  "protocol_sha256": "4bdd5abfabe2674caba78c1f7b637f3c141d5550a09b55e065020c8a9c069e71",
+  "expected_episodes": 50,
+  "completed_episodes": 50,
+  "successes": 0,
+  "engineering_complete": true,
+  "last_job_id": "1524980",
+  "last_error": null,
+  "split": "pretrain",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000"
+}

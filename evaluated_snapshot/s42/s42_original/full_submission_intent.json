@@ -1,0 +1,9 @@
+{
+  "phase": "full",
+  "status": "submitted",
+  "array_job_id": "1524975",
+  "jobs": 8,
+  "tasks": 50,
+  "total_episodes": 2500,
+  "dispatch": "eight_sequential_workers"
+}

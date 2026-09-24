@@ -1,0 +1,28 @@
+{
+  "groups": {
+    "atomic_seen": {
+      "executed_action_chunks": 37550,
+      "selected_nonfirst_chunks": 28223,
+      "changed_environment_chunks": 28223,
+      "prediction_divergent_chunks": 37550,
+      "score_divergent_chunks": 37550
+    },
+    "composite_seen": {
+      "executed_action_chunks": 116100,
+      "selected_nonfirst_chunks": 86862,
+      "changed_environment_chunks": 86862,
+      "prediction_divergent_chunks": 116100,
+      "score_divergent_chunks": 116100
+    },
+    "composite_unseen": {
+      "executed_action_chunks": 130150,
+      "selected_nonfirst_chunks": 97615,
+      "changed_environment_chunks": 97615,
+      "prediction_divergent_chunks": 130150,
+      "score_divergent_chunks": 130150
+    }
+  },
+  "record_counts_verified": true,
+  "receipt_digests_verified": true,
+  "raw_traces_included": false
+}

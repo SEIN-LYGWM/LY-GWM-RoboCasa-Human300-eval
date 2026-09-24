@@ -1,0 +1,19 @@
+{
+  "model_name": "LY-GWM-RoboCasa-Human300",
+  "split": "pretrain",
+  "successes": 200,
+  "episodes": 2500,
+  "overall_success_rate": 0.08,
+  "atomic_seen_success_percent": 15.666666666666668,
+  "composite_seen_success_percent": 5.0,
+  "composite_unseen_success_percent": 2.375,
+  "gr00t_parameters": 2724163520,
+  "lygwm_parameters": 10237204,
+  "combined_parameters": 2734400724,
+  "joint_mode": "learned_graph_dynamics_shadow_prediction",
+  "shadow_outputs_influence_actions": false,
+  "checkpoint_repository": "sein2022/LY-GWM-RoboCasa-Human300",
+  "code_repository": "SEIN-LYGWM/LY-GWM-RoboCasa-Human300-eval",
+  "standalone_reproduction_verified": false,
+  "leaderboard_submission_run": false
+}

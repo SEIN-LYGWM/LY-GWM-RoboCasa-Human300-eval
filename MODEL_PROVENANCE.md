@@ -12,9 +12,20 @@ updates, global batch size 128. The evaluated artifact is checkpoint-120000.
 The additional LY-GWM graph module has 10,237,204 parameters and was trained
 separately on cached frozen-policy features. The selected checkpoint SHA256 is
 `a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1`.
-It performs action-conditioned future feature/state prediction. In the evaluated
-release, control actions remain the GR00T policy outputs. Causal reasoning is
-a future research objective, not a validated capability of this release.
+It performs action-conditioned future feature/state prediction. S32 recorded
+forecasts while retaining original GR00T actions. S42 instead uses predictions
+to score four candidates and select the executed input chunk. S38 supplies a
+separate frozen 264,961-parameter binary state-reward head (2,068 → 128 → 1).
+Its checkpoint SHA256 is
+`5f9ad4b52eddfc2ca3f1ac06efcae3f20a02a764857987fe447810d5cde68a8b`.
+It is not a goal-conditioned value function. Causal reasoning is a research
+objective, not an established capability. Model hashes are in release_info.json.
+
+The new publication subset omits additional S38 training histories and raw
+training data. The unchanged scorer config is included because inference
+asset verification pins its hash; it contains original source path references.
+Those paths are provenance, not new-machine paths to execute. A complete
+training-data audit is outside this inference release.
 
 ## Notices
 

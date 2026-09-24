@@ -1,0 +1,40 @@
+{
+  "array": "0-7%8",
+  "dispatch": "eight_sequential_workers",
+  "experiment": "S42_FULL_LEARNED_REWARD_V1",
+  "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+  "management_sha256": {
+    "collect.py": "8463719f3b8c5e29ffc34e631e7ce60543454d56775b09e2f246349ce4f64b25",
+    "full_dispatch.sh": "f432629ca0fd70a704d0c133e1814a342ef1f96a28db58455b20e461a17651b7",
+    "job_table.json": "0fd093038a6b2f122e089d4df766cddf240eff7ce696fbab7050764e8b628ae6",
+    "monitor.py": "34b89c175f71e20a40b200e691988dc200703fe9f376f649830333946caeaa34",
+    "pool_dispatch.py": "5838949923f3cf4bea87f4bb935d5e23529d4647d89c99b565ec6b0fe146ed9e",
+    "pool_table.json": "9bb6e8e5864c4723c72d7b209c41872518d90fb9bd60eb359ee9e5dc45fe3206",
+    "selection_rule.py": "c48a79b8b7b6568d95eec8c22fdcfa9f888febddaad73a389caec9b1271e6995",
+    "submit.py": "07df9fb25cb73c23415dce2e56ae045e78d568be6ce122535428309eb0d1b3e3"
+  },
+  "original_launch_receipt_sha256": "1341d3cdb1673ae8cfa53175cc42580b9f854adee32381c3f3d3d633d5c06899",
+  "policy_weight_sha256": {
+    "model-00001-of-00002.safetensors": "a734b821ddf1a145536baeeb5b144e0e8435f1746ee6aced523d2ff0a19d5d4a",
+    "model-00002-of-00002.safetensors": "0b713131a2e4627710a57fdf65887f44629d505e15ec66df18ac32a47c7485d3"
+  },
+  "protocol_sha256": "4bdd5abfabe2674caba78c1f7b637f3c141d5550a09b55e065020c8a9c069e71",
+  "repair_backup": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s42_full_learned_reward_v1/submission_repair_backup_20260923_195739",
+  "runtime_sha256": {
+    "decision_adapter.py": "020a56c69438fe6d00614447e572168b13886da694b68be921a6b361bf0f0531",
+    "decision_audit.py": "13cd2b1378819545b243436c5ed2c4d65442c01228c808e2d6e978b4b4fe6d63",
+    "graph_model.py": "e8fdf8fa6c266e574d93a30b5424da24a99054432cd4da5e10bdeb07f7bf8a24",
+    "job.sh": "a6c4580162f0a533525dd17483f319b5e8ba87edab6b6d293280041b19f7a0d8",
+    "prediction_probe.py": "d5585b2db5f34f7525e67f485bf91face14b88530c8a0d89cd8b8838063a8e90",
+    "protocol.json": "67bcc011d3d252f521e810141283e8c63060285b7c5518ab3a97f015b49591fd",
+    "reward_model.py": "5488d1412267bb3a1ea4e4400eac550e0aaf21e3d721aac69b056f5b6cbf5517",
+    "selection_rule.py": "c48a79b8b7b6568d95eec8c22fdcfa9f888febddaad73a389caec9b1271e6995",
+    "target50_manifest.json": "182bf85163442588a1d64246dc6b90087520bc167fb314ee8350bdd1a270c264",
+    "worker.py": "22701cc51641b7b50a032e30e82e9da581e4868c979ee79ec03455a2faac197c"
+  },
+  "scheduler_jobs": 8,
+  "scorer_checkpoint_sha256": "5f9ad4b52eddfc2ca3f1ac06efcae3f20a02a764857987fe447810d5cde68a8b",
+  "source_s41_protocol_sha256": "74431eabdada254669df6f9e5956ecf8c2242ca3bafa02cdc56d9165567c5578",
+  "task_count": 50,
+  "total_episodes": 2500
+}

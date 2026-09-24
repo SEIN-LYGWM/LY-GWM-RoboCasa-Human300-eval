@@ -1,0 +1,113 @@
+{
+  "phase": "full",
+  "experiment": "S42_FULL_LEARNED_REWARD_V1",
+  "complete": true,
+  "new_evaluation": true,
+  "all_2500_completed": true,
+  "completed_tasks": 50,
+  "valid_episodes": 2500,
+  "successes": 207,
+  "overall_success_rate": 0.0828,
+  "groups": {
+    "atomic_seen": {
+      "episodes": 900,
+      "successes": 150,
+      "success_rate": 0.16666666666666666
+    },
+    "composite_seen": {
+      "episodes": 800,
+      "successes": 38,
+      "success_rate": 0.0475
+    },
+    "composite_unseen": {
+      "episodes": 800,
+      "successes": 19,
+      "success_rate": 0.02375
+    }
+  },
+  "mode": "learned_reward",
+  "algorithm": "four_candidate_learned_reward",
+  "learned_state_reward_scorer": true,
+  "goal_conditioned_value_scorer": false,
+  "scoring_scope": "Recorded binary state reward; not long-horizon value or calibrated rollout success",
+  "split": "pretrain",
+  "robocasa_version": "1.0.1",
+  "protocol_sha256": "4bdd5abfabe2674caba78c1f7b637f3c141d5550a09b55e065020c8a9c069e71",
+  "checkpoint_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/04_train_repro/r5_formal_train/formal_trainer/checkpoint-120000",
+  "policy_weight_sha256": {
+    "model-00001-of-00002.safetensors": "a734b821ddf1a145536baeeb5b144e0e8435f1746ee6aced523d2ff0a19d5d4a",
+    "model-00002-of-00002.safetensors": "0b713131a2e4627710a57fdf65887f44629d505e15ec66df18ac32a47c7485d3"
+  },
+  "scorer_checkpoint_sha256": "5f9ad4b52eddfc2ca3f1ac06efcae3f20a02a764857987fe447810d5cde68a8b",
+  "lygwm_checkpoint_sha256": "a964d19a0078cc6282d5da79f06f7d7ead3137799b8f6e969ccff5e0643be9f1",
+  "action_evidence": {
+    "executed_action_chunks": 283800,
+    "selected_nonfirst_chunks": 212700,
+    "changed_environment_chunks": 212700,
+    "prediction_divergent_chunks": 283800,
+    "score_divergent_chunks": 283800
+  },
+  "action_evidence_verified": true,
+  "leaderboard_metrics_percent": {
+    "atomic_seen_success": 16.666666666666664,
+    "composite_seen_success": 4.75,
+    "composite_unseen_success": 2.375
+  },
+  "comparison_scope": "Single arm; no baseline effect estimated.",
+  "official_acceptance": false,
+  "acceptance_rule_revision": {
+    "version": "S42_ACCEPTANCE_V2_BOUNDS_DIAGNOSTIC_ONLY",
+    "post_run_rule_change": true,
+    "change": "Nonzero action-bound counts no longer block internal acceptance.",
+    "retained_checks": "All other original collector checks; bounds counters must be nonnegative integers.",
+    "original_collector_path": "/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s42_full_learned_reward_v1/collect.py",
+    "original_collector_sha256": "8463719f3b8c5e29ffc34e631e7ce60543454d56775b09e2f246349ce4f64b25",
+    "revised_collector_sha256": "55c077172a122c8e5507519ce3a8d2f5e923149713d59292159dc28f991a04ea",
+    "original_input_file_sha256": {
+      "collect.py": "8463719f3b8c5e29ffc34e631e7ce60543454d56775b09e2f246349ce4f64b25",
+      "full/learned_reward/protocol.json": "67bcc011d3d252f521e810141283e8c63060285b7c5518ab3a97f015b49591fd",
+      "full/learned_reward/build_report.json": "1408995550f0d596568a132e4fb90f2415c58508a1b2d19c3cb1d5a838698ef9"
+    }
+  },
+  "bounds_diagnostics": {
+    "policy": "diagnostic_only",
+    "total": {
+      "episodes": 2500,
+      "affected_episodes": 1822,
+      "affected_successful_episodes": 149,
+      "affected_tasks": 50,
+      "predicted_scalar_count": 116968,
+      "executed_prefix_scalar_count": 116292
+    },
+    "groups": {
+      "atomic_seen": {
+        "episodes": 900,
+        "affected_episodes": 702,
+        "affected_successful_episodes": 114,
+        "affected_tasks": 18,
+        "predicted_scalar_count": 25207,
+        "executed_prefix_scalar_count": 24835
+      },
+      "composite_seen": {
+        "episodes": 800,
+        "affected_episodes": 525,
+        "affected_successful_episodes": 21,
+        "affected_tasks": 16,
+        "predicted_scalar_count": 35514,
+        "executed_prefix_scalar_count": 35409
+      },
+      "composite_unseen": {
+        "episodes": 800,
+        "affected_episodes": 595,
+        "affected_successful_episodes": 14,
+        "affected_tasks": 16,
+        "predicted_scalar_count": 56247,
+        "executed_prefix_scalar_count": 56048
+      }
+    },
+    "original_zero_bounds_condition_satisfied": false,
+    "interpretation": "Scalar elements in selected action chunks and consumed input prefixes; not post-controller measurements."
+  },
+  "internal_acceptance_under_revised_rules": true,
+  "new_rollouts_performed_by_this_collector": false
+}

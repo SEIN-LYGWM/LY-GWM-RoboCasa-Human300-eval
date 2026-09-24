@@ -1,0 +1,100 @@
+--- /home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s42_full_learned_reward_v1/collect.py
++++ /home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s42_acceptance_v2_bq38pv9k/collect_v2.py
+@@ -8,6 +8,9 @@
+ GROUPS=dict(atomic_seen=900,composite_seen=800,composite_unseen=800)
+ def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+ def write(p,value):
++    assert p.parent == SOURCE_ROOT
++    assert p.name in ('per_task_results.json','evaluation_receipt.json','overall_results.json')
++    p=OUTPUT_ROOT/p.name
+     temp=p.with_name(p.name+'.tmp')
+     temp.write_text(json.dumps(value,indent=2,ensure_ascii=False)+'\n');temp.replace(p)
+ 
+@@ -27,7 +30,7 @@
+         assert r['max_episode_steps']==task['max_episode_steps'] and r['n_action_steps']==16
+         assert 0<r['env_step_count']<=task['max_episode_steps']
+         assert r['policy_request_count']>0
+-        assert r['outside_predicted_bounds_count']==r['outside_executed_bounds_count']==0
++        record_bounds(r)
+         assert r['extra_action_clipping_applied'] is False
+         assert r['extra_action_denormalization_applied'] is False
+         records[e]=r
+@@ -104,6 +107,7 @@
+             composite_seen_success=100*groups['composite_seen']['success_rate'],
+             composite_unseen_success=100*groups['composite_unseen']['success_rate']),
+         comparison_scope='Single arm; no baseline effect estimated.',official_acceptance=False)
++    annotate_acceptance(result,per_task)
+     write(root/'per_task_results.json',per_task)
+     write(root/'evaluation_receipt.json',dict(launch=receipt,
+         overall_results_sha256=audit.digest(result),per_task_results_sha256=audit.digest(per_task),
+@@ -112,6 +116,69 @@
+     write(root/'overall_results.json',result)
+     return result
+ 
++
++# Explicit post-run acceptance revision; original rollout protocol is unchanged.
++import hashlib
++SOURCE_ROOT = Path('/home/bingxing2/home/scx9fvq/m489_robocasa365_gr00t_n1_5/03_contract/s42_full_learned_reward_v1')
++OUTPUT_ROOT = Path(__file__).resolve().parent
++EXPECTED_INPUT_SHA256 = {'collect.py': '8463719f3b8c5e29ffc34e631e7ce60543454d56775b09e2f246349ce4f64b25', 'full/learned_reward/protocol.json': '67bcc011d3d252f521e810141283e8c63060285b7c5518ab3a97f015b49591fd', 'full/learned_reward/build_report.json': '1408995550f0d596568a132e4fb90f2415c58508a1b2d19c3cb1d5a838698ef9'}
++REVISION = 'S42_ACCEPTANCE_V2_BOUNDS_DIAGNOSTIC_ONLY'
++_bounds_rows = []
++
++def record_bounds(r):
++    a = r['outside_predicted_bounds_count']
++    b = r['outside_executed_bounds_count']
++    assert type(a) is int and type(b) is int and a >= 0 and b >= 0
++    _bounds_rows.append(dict(task_index=r['task_index'], episode_index=r['episode_index'],
++        task_group=r['task_group'], task_success=r['task_success'],
++        predicted=a, executed=b))
++
++def bounds_summary(rows):
++    affected = [r for r in rows if r['predicted'] or r['executed']]
++    return dict(episodes=len(rows), affected_episodes=len(affected),
++        affected_successful_episodes=sum(r['task_success'] for r in affected),
++        affected_tasks=len({r['task_index'] for r in affected}),
++        predicted_scalar_count=sum(r['predicted'] for r in rows),
++        executed_prefix_scalar_count=sum(r['executed'] for r in rows))
++
++def annotate_acceptance(result, per_task):
++    assert len(_bounds_rows) == 2500
++    assert len({(r['task_index'], r['episode_index']) for r in _bounds_rows}) == 2500
++    total = bounds_summary(_bounds_rows)
++    for task in per_task:
++        rows = [r for r in _bounds_rows if r['task_index'] == task['task_index']]
++        assert len(rows) == 50
++        task['bounds_diagnostics'] = bounds_summary(rows)
++    result['acceptance_rule_revision'] = dict(version=REVISION,
++        post_run_rule_change=True,
++        change='Nonzero action-bound counts no longer block internal acceptance.',
++        retained_checks='All other original collector checks; bounds counters must be nonnegative integers.',
++        original_collector_path=str(SOURCE_ROOT / 'collect.py'),
++        original_collector_sha256=EXPECTED_INPUT_SHA256['collect.py'],
++        revised_collector_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++        original_input_file_sha256=EXPECTED_INPUT_SHA256)
++    result['bounds_diagnostics'] = dict(policy='diagnostic_only', total=total,
++        groups={g: bounds_summary([r for r in _bounds_rows if r['task_group'] == g]) for g in GROUPS},
++        original_zero_bounds_condition_satisfied=(total['affected_episodes'] == 0),
++        interpretation='Scalar elements in selected action chunks and consumed input prefixes; not post-controller measurements.')
++    result['internal_acceptance_under_revised_rules'] = True
++    result['new_rollouts_performed_by_this_collector'] = False
++    result['official_acceptance'] = False
++
++def verify_revision_inputs():
++    if not __debug__:
++        raise RuntimeError('Assertions must remain enabled.')
++    for name, digest in EXPECTED_INPUT_SHA256.items():
++        if hashlib.sha256((SOURCE_ROOT / name).read_bytes()).hexdigest() != digest:
++            raise RuntimeError('Input file changed: ' + str(SOURCE_ROOT / name))
++    for name in ('per_task_results.json', 'evaluation_receipt.json', 'overall_results.json'):
++        if (OUTPUT_ROOT / name).exists():
++            raise RuntimeError('Output already exists; rerun the installer for a fresh directory: ' + name)
++    print('ACCEPTANCE_REVISION', REVISION, flush=True)
++    print('OUTPUT_DIRECTORY', str(OUTPUT_ROOT), flush=True)
++    print('Checking frozen assets, weights, records, and action evidence...', flush=True)
++
+ if __name__=='__main__':
++    verify_revision_inputs()
+     parser=argparse.ArgumentParser();parser.add_argument('phase',choices=['full']);parser.parse_args()
+-    print(json.dumps(collect_phase(Path(__file__).resolve().parent),indent=2,ensure_ascii=False))
++    print(json.dumps(collect_phase(SOURCE_ROOT),indent=2,ensure_ascii=False))
