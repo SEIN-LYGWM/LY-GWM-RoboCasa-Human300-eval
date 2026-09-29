@@ -1,0 +1,78 @@
+LY-GWM Non-Commercial Research License
+Version 1.0
+
+Copyright (c) 2026 北京市密网信息科技有限公司 (SEIN-LYGWM).
+All rights reserved except as expressly granted below.
+
+1. Scope and ownership
+"Licensor" means 北京市密网信息科技有限公司. "Covered Materials" means
+the Licensor-owned source code and model weights identified by LICENSE_SCOPE.md
+and expressly distributed with this license. This license applies only to rights
+the Licensor owns or is authorized to grant. Third-party materials, including
+NVIDIA GR00T code, base weights and upstream portions of fine-tuned GR00T
+weights, remain governed by their respective licenses and are not relicensed
+by this document. The Licensor retains ownership of the Covered Materials.
+
+2. Permitted non-commercial research
+Subject to all terms of this license, the Licensor grants you a worldwide,
+non-exclusive, royalty-free copyright license to access, use, reproduce,
+modify, evaluate and redistribute the Covered Materials and your modifications
+solely for non-commercial research. This includes scientific study, research
+reproduction, research benchmarking, and publication of research methods and
+results. Public benchmark review and academic publication are permitted when
+they serve these non-commercial research purposes.
+
+3. Commercial use is prohibited
+No commercial-use rights are granted. Neither the Covered Materials nor
+modifications or derivative works incorporating them may be used for a purpose
+primarily directed toward commercial advantage or monetary compensation.
+Prohibited uses include sale or paid licensing of the Covered Materials;
+paid APIs, hosted inference, consulting or other paid services using them;
+integration into commercial products or production business operations; and
+research, development, testing or optimization directed toward a commercial
+product or service. A use is not permitted merely because it is called
+"research", is performed by a nonprofit, is internal, or is offered without
+charge. The actual purpose and use determine whether this restriction applies.
+
+4. Modifications and redistribution
+You may share original or modified Covered Materials solely for the permitted
+purposes, provided that you (a) include this complete license and the applicable
+LICENSE_SCOPE.md; (b) preserve copyright, attribution and third-party notices;
+(c) clearly identify your modifications and do not imply that the Licensor
+authored or endorsed them; and (d) preserve the same non-commercial research
+restriction for all redistributed Covered Materials and derivative works
+incorporating them. You may not grant recipients broader rights to the Covered
+Materials than this license grants. Separate independent works do not become
+Covered Materials merely by being distributed alongside them.
+
+5. Third-party rights and previous grants
+This license does not replace, relax or expand any third-party license, and
+does not confer rights in third-party datasets, simulator assets, pretrained
+models, patents or trademarks. You must independently comply with applicable
+third-party terms. This license applies to distributions accompanied by it;
+it does not purport to revoke or narrow rights validly granted under an earlier
+license. Mere inclusion of an upstream license in this repository does not
+place the Licensor's separately identified original materials under that
+upstream license.
+
+6. No trademark permission
+No permission is granted to use the Licensor's names, logos or trademarks,
+except for accurate attribution and reproduction of required notices.
+
+7. Disclaimer and limitation of liability
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE COVERED MATERIALS ARE PROVIDED
+"AS IS", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+THE LICENSOR SHALL NOT BE LIABLE FOR DAMAGES ARISING FROM USE OR INABILITY
+TO USE THE COVERED MATERIALS, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+8. Termination and reserved rights
+The permissions granted by this license terminate if you violate its terms.
+Upon termination, stop all activities that depend on this license and delete
+copies under your control, except copies required to be retained by law.
+Rights not expressly granted are reserved. Statutory rights that cannot be
+restricted by contract are not affected.
+
+This is a source-available, non-commercial research license; it is not an
+unrestricted open-source license. The English text is the operative license.
+Any Chinese summary is for explanation only.

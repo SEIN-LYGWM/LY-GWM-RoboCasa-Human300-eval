@@ -1,5 +1,25 @@
 # LY-GWM-RoboCasa-Human300
 
+## License: non-commercial research only
+
+The company-owned LY-GWM graph model, S38 reward scorer, and covered original
+code and weights are publicly available **only for non-commercial research**
+under the [LY-GWM Non-Commercial Research License v1.0](LICENSE).
+**Commercial use is prohibited**, including commercial products, paid services
+and development directed toward commercial products or services.
+Research reproduction, research benchmarking, and academic publication are
+permitted subject to the license. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md)
+for the precise component scope and exclusions.
+
+GR00T and other third-party materials retain their original licenses.
+GR00T source-code licensing and model-weight licensing are separate.
+This is a source-available research release, not a blanket MIT/Apache-2.0
+license or a grant of unrestricted commercial rights.
+
+中文：公司自研且有权授权的 LY-GWM 代码与权重仅限非商业研究用途，禁止商用。
+第三方组件继续适用各自许可证，具体范围见 LICENSE_SCOPE.md。
+
+
 **Prediction-guided action selection for robot manipulation**
 
 LY-GWM-RoboCasa-Human300 combines a Human300-fine-tuned GR00T-N1.5 policy with an action-conditioned graph dynamics model and a learned state-reward scorer.

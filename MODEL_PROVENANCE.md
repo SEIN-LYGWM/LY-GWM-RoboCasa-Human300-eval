@@ -44,3 +44,15 @@ Individual code components retain their original headers/notices. Collected
 source notices and declarations are in reviewer/runtime_inventory/source_records/.
 Missing notices for external dependencies still need to be resolved; this
 collection is not a declaration that all third-party licensing is complete.
+
+
+## License for company-owned LY-GWM components
+
+The company-owned LY-GWM graph-dynamics module, S38 reward scorer and covered
+original code/configuration/weights are licensed for **non-commercial research
+only** under the root `LICENSE` (LY-GWM Non-Commercial Research License v1.0).
+Commercial use is prohibited. `LICENSE_SCOPE.md` identifies the covered
+components and third-party exclusions. This grant is limited to rights held
+by 北京市密网信息科技有限公司 and does not replace any upstream license.
+In particular, the GR00T-derived policy weights retain the NVIDIA weight terms.
+This addition makes no change to model bytes, historical results or provenance.
