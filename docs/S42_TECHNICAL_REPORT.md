@@ -1,7 +1,10 @@
 # S42 technical report: active learned-reward candidate selection
 
-Evaluation date: 2026-09-24. This report documents S42 and compares it with
-the historical self-trained GR00T-N1.5 baseline (S31).
+Local evaluation date: 2026-09-24. Documentation updated: 2026-10-10.
+This short report retains the historical local S42/S31 comparison and separately
+reports the RoboCasa maintainers' independent re-evaluation. The complete
+[English report](LYGWM_RoboCasa_Technical_Report_EN.md) and
+[Chinese report](LYGWM_RoboCasa_Technical_Report_ZH.md) follow technical report v1.3.
 
 ## Policy and interfaces
 
@@ -37,7 +40,7 @@ selection rule. Graph relational structure alone does not establish causal
 reasoning, and offline reward prediction accuracy does not establish ranking
 quality on sampled policy candidates.
 
-## Evaluation protocol
+## Historical local evaluation protocol
 
 RoboCasa 1.0.1; split `pretrain`; 18 atomic-seen, 16 composite-seen and 16
 composite-unseen tasks; 50 episodes each. The committed manifest specifies
@@ -84,9 +87,39 @@ of 2,500 episodes across all 50 tasks, including 149 successful episodes.
 They are not counts of unsafe physical events, nor proof of controller-level
 violations. Their magnitude and downstream controller handling remain an
 engineering investigation. No bound-clean subset was used for reported scores.
-`official_acceptance` remains false.
+The archived local `official_acceptance` field remains false; it records the
+historical local artifact and is not the status of the subsequent official
+leaderboard PR, which was merged on 2026-09-30.
 
-## Comparisons and remaining limits
+## Official independent re-evaluation
+
+The RoboCasa maintainer published the independently reproduced results on
+2026-09-28 in [leaderboard PR #19](https://github.com/robocasa-benchmark/leaderboard/pull/19#issuecomment-5863555620).
+The PR was merged on 2026-09-30; the [official leaderboard](https://robocasa.ai/leaderboard.html)
+lists the system as LY-GWM-RoboCasa, submitted by SEIN-LYGWM.
+
+| Group | Tasks | Successes / episodes | Leaderboard rate |
+| --- | ---: | ---: | ---: |
+| Atomic-Seen | 18 | 261 / 540 | 48.3% |
+| Composite-Seen | 16 | 78 / 480 | 16.3% |
+| Composite-Unseen | 16 | 15 / 480 | 3.1% |
+| Overall | 50 | 354 / 1,500 | 23.6% |
+
+Group percentages retain the official leaderboard's one-decimal display.
+The exact counts give (261 + 78 + 15) / (540 + 480 + 480) = 354/1500 = 23.6%.
+The official totals and task rates correspond to 30 episodes per task;
+the historical local evaluations used 50 episodes per task, or 2,500 total.
+All 50 official task rates appear in Appendix A.1 of the complete reports;
+Appendix A separately preserves the local counts and horizons.
+
+The official run is an independent re-evaluation, not a local baseline ablation.
+The difference between official 23.6% and local 8.28% is not evidence of a
+model update, training improvement, or an isolated graph-model contribution.
+The maintainer comment does not specify all runtime settings. Local seeds,
+dependencies, horizons, action-audit counts, paired statistics and bootstrap
+intervals are not asserted to describe the official run.
+
+## Historical local comparisons and remaining limits
 
 | Evaluation | Atomic seen | Composite seen | Composite unseen | Overall |
 | --- | ---: | ---: | ---: | ---: |
@@ -100,7 +133,24 @@ manifests and recorded checkpoint paths align, but no contemporaneous S31
 weight-shard hashes were recovered. Current hashes cannot retroactively
 prove the exact S31 weight identity. No causal gain or significance is claimed.
 
+The local exploratory paired accounting has 105 both-success, 76 S31-only,
+102 S42-only and 2,217 both-fail outcomes. The descriptive two-sided exact
+binomial calculation on 178 discordant pairs gives p = 0.06065; task clustering
+and the historical design limit interpretation. The exploratory stratified
+task bootstrap (18/16/16 tasks; 20,000 replicates; NumPy default_rng seed
+20260925) gives a 95% interval of [0.00, 2.12] percentage points. It resamples
+the task mix, not repeated policy seeds. Full scope and limits are in Section
+6.1 of the complete reports; these analyses do not apply to official results.
+
 The separately recorded S30 public-checkpoint local result is 212/2500 (8.48%).
+Its manifest uses split `target`; S31 and S42 use split `pretrain`. S30 is
+therefore a separate reference, not a same-protocol S31/S42 control:
+
+| Historical S30, target split | Atomic-Seen | Composite-Seen | Composite-Unseen | Overall |
+| --- | ---: | ---: | ---: | ---: |
+| Successes / episodes | 162/900 | 36/800 | 14/800 | 212/2500 |
+| Success rate | 18.00% | 4.50% | 1.75% | 8.48% |
+
 The discrepancy with the maintainer's cited public-checkpoint leaderboard
 performance remains unresolved; no hardware or simulator cause is established.
 The new entrypoints allow a fresh evaluation on a reviewer's setup but have
